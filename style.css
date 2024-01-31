@@ -1,0 +1,336 @@
+section{
+    border: solid black 2px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+
+   
+}  
+
+/*------------------------------Navigation------------------------------*/
+
+.header-logo{
+    display: block;
+    width: 120px;
+    height: 60px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: fixed; */
+    background-color: rgb(16, 16, 16);
+    /* background-size: cover;
+    text-align: center; */
+    height: 50px;
+}
+
+nav a{ 
+    margin: 0px 5px;
+    /* position: fixed; */
+    text-decoration: none;
+    color: rgb(219, 219, 247);
+}
+
+nav a:hover{
+    color: rgb(249, 249, 250);
+}
+/*----------------------------Hero section---------------------------------*/
+
+
+.hero{
+    /* background-image: url(img/hero/pexels-lyn-hoare-5042817.jpg);
+    background-position: cover;
+    background-position-y: bottom; */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+#hero-img{
+    
+    width: 40vw; 
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.hero-content{
+    grid-column: 1 / 2;
+    text-align: justify;
+}
+
+/* .hero-content h1{
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+} */
+
+/*------------------------------------Blog Cards---------------------------------------------*/
+
+.blog-unit{
+    /* background-image: radial-gradient(rgb(205, 229, 252), rgb(241, 210, 238)); */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   
+}
+
+.card{
+    /* border: solid blue 2px; */
+    /* background-color: rgb(132, 133, 133); */
+    border-radius: 3px;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 2px 2px 5px rgb(139, 139, 139);
+    /* box-shadow: 3px 3px 5px rgb(22, 22, 22); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card img{
+   /* display:list-item; */
+   align-items: center;
+   max-width: 350px;
+   max-height: 180px;
+}
+
+#read-more-link{
+    display: block;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    color:aliceblue;
+}
+
+#read-more-link:hover{
+    color: rgb(207, 248, 248);
+}
+
+/*-----------------H2,H3--------------------------------*/
+
+h2,h3{
+    text-align: center;
+}
+
+/*--------------------Activities to do -----------------------*/
+
+
+.things-to-do{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:10px;
+    padding: 10px;
+}
+
+.things-to-do h2{
+    grid-column: 1 / 3;
+    text-align: center;
+}
+
+.activities, .music-events, .fun-activities, .local-shopping{
+    /* background-color: rgb(132, 133, 133); */
+    max-width: 600px;
+    border-radius: 3px;
+    margin: 3px;
+    padding: 5px;
+    box-shadow: 3px 3px 5px rgb(139, 139, 139);
+    /* box-shadow: 3px 3px 5px rgb(168, 70, 238); */
+    text-align: center;
+}
+
+.activities:hover{
+    transition: ease-in;
+}
+
+/*-------------------------Body-----------------------------------------------*/
+
+body{
+    
+    background-image: radial-gradient(rgb(2, 18, 18), rgb(44, 43, 44));
+    color: aliceblue;
+    /* background-image: radial-gradient(rgb(205, 229, 252), rgb(241, 210, 238)); */
+    margin: 0%;
+    /* background-color: snow; */
+
+
+    /* --------center the content----------- */
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; */
+    /* --------------------- */
+}
+
+strong{
+    font-size: large;
+    color: floralwhite;
+    font-weight: bolder;
+
+}
+
+
+
+/*-------------------------Footer section----------------------------------------*/
+/*  */
+
+footer{
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    background-size: cover;
+    height: 200px;
+}
+
+footer a{
+    text-decoration: none;
+    text-wrap: wrap;
+    height: 20px;
+    padding: 10px 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 200;
+    color: aliceblue;
+}
+
+footer a:hover{
+    color:rgb(131, 127, 127);
+}
+
+.settings{
+ /* display: flex;
+ flex-direction: column;
+ row-gap: 10px; */
+ align-items: center;
+ color: aliceblue;
+ /* padding: 30px 10px 20px 40px; */
+}
+
+.logo{
+   width: 140px;
+   height: 80px;
+}
+
+.copyright{
+    color: rgb(147, 149, 151);
+    margin: 0%;
+    background-color: rgb(23, 23, 23)x;
+}
+
+/* 
+.other-sites{
+display: grid;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+width: 60%;
+position: relative;
+}  */
+
+
+/* ----------------------------------------Blog detail pages styles--------------------------------------------- */
+
+.hero-blog-detail{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+#hero-banner{
+    max-width:30vw;
+}
+
+
+#yala-entrance, #udawalawe-img, #wasgamuwa-img, #kumana-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+
+
+
+/* --------------------media queries for screens---------------------------------------------- */
+
+/*---------------------media queries for screen size below 1270px-----------------------*/
+
+@media (max-width:1270px){
+    .blog-unit{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    /* .hero , .hero-content{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    } */
+
+    /* .hero img{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        max-width: 80%;
+    } */
+}
+
+/*---------------media queries for screen size below 900px--------------------------*/
+
+@media (max-width:900px) {
+    /* .nav-bar{
+        display: grid;
+        justify-content: flex-start;
+    } */
+
+    .hero{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    #hero-img{
+        width: 80vw;
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+        max-width: 100%;
+    }
+
+    .hero-content{
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+        text-align: center;
+    }
+
+    .blog-unit{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+    .card img{
+        max-width: 80%;
+    }
+
+    .settings{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        content: wrap;
+       }
+
+    .logo{
+        display: block;
+        height: 50px;
+        width: 100px;
+    }
+}
+
+/*--------------media queries for screen size below 370px------------------------*/
+
+@media (max-width:370px){
+    .card img{
+        max-width: 80%;
+    }
+    .card h2, p{
+        text-align: left;
+    }
+
+    .things-to-do{
+        display: block;
+    }
+}
